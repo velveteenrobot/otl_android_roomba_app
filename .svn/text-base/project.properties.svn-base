@@ -1,0 +1,6 @@
+android.library.reference.1=../../../android/appmanandroid/library
+android.library.reference.2=../../../android/rosjava_android/android_gingerbread/.
+sdk.dir=/home/ogutti/android-sdk-linux
+target=android-9
+key.store=/home/ogutti/android.keystore
+key.alias=ogutti

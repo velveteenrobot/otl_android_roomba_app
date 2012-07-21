@@ -1,0 +1,15 @@
+<package>
+  <description brief="ROS Sensor Teleop">
+  	 This package contains Android App and robot side .app file.
+         You must use App Chooser for using this Android App.
+  </description>
+  <author>Takashi Ogura</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/otl_android_roomba_app</url>
+  <depend package="appmanandroid"/>
+
+  <export>
+    <rosjava-android-app target="android-9" />
+  </export>
+</package>

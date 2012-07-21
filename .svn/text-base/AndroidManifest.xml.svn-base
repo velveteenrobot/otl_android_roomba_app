@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	  package="com.ogutti.ros.android.roomba_app"
+	  android:versionCode="2"
+	  android:versionName="1.0.1">
+  <uses-sdk android:minSdkVersion="9" />
+  
+  <application android:icon="@drawable/droid" android:label="@string/app_name">
+    
+    <activity android:name=".RoombaController" android:label="@string/app_name"
+	      android:configChanges="orientation|keyboardHidden">
+      <intent-filter>
+	<action android:name="android.intent.action.MAIN" />
+	<category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+	<action android:name="com.ogutti.ros.android.roomba_app.RoombaController" />
+	<category android:name="android.intent.category.DEFAULT" />
+      </intent-filter>
+    </activity>
+    <activity android:name="ros.android.activity.MasterChooserActivity"
+	      android:label="@string/app_name">
+    </activity>
+  </application>
+  
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+</manifest>
